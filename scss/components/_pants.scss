@@ -1,0 +1,70 @@
+.pants {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 50%;
+    border: 1px white solid;
+
+    @include for-phone {
+      &:nth-child(3n) {
+        max-width: 100%;
+      }
+    }
+
+    @include for-tablet {
+      max-width: 33.33%;
+    }
+
+    @include for-desktop {
+      max-width: 25%;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+
+    @include for-tablet {
+      font-size: 24px;
+    }
+
+    @include for-desktop {
+      font-size: 24px;
+    }
+  }
+
+  &__img-div {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: 5px;
+
+    @include for-tablet {
+      margin: 10px;
+    }
+
+    @include for-desktop {
+      margin: 10px;
+    }
+  }
+}

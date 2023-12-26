@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  padding: 0 30px;
+  z-index: 2;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  position: sticky;
+  top: 0;
+  background-color: #ffffffba;
+
+  &.is-open.header {
+    background-color: aqua;
+  }
+  &__hero {
+    position: fixed;
+  }
+
+  &__container {
+    justify-content: space-between;
+    display: -webkit-box;
+    align-items: center;
+  }
+
+  &__burger-menu {
+    padding: 5px 0;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    background-color: #fff0;
+
+    @include for-tablet {
+      display: none;
+    }
+
+    @include for-desktop {
+      display: none;
+    }
+  }
+}

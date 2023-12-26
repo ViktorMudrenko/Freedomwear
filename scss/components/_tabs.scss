@@ -1,0 +1,87 @@
+.section {
+  // *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .tabs {
+    // height: 500px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-tablet {
+      display: none;
+    }
+
+    @include for-desktop {
+      display: none;
+    }
+
+    &__input {
+      display: none;
+
+      :checked {
+        background-color: #bdbdbd;
+      }
+    }
+
+    &__input:checked + label {
+      background-color: #bdbdbd;
+    }
+
+    &__label {
+      width: 32.5%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: #eee;
+      border: 1px solid transparent;
+      padding: 2px 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      border-radius: 4px;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    &__content {
+      display: none;
+      border: 1px solid #eee;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    &__content-list {
+      padding-left: 20px;
+      font-size: 12px;
+      color: #484848;
+    }
+
+    &__content-text {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &__content-item {
+      margin-bottom: 10px;
+      list-style-type: disc;
+    }
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked ~ #content-1,
+  #tab-btn-2:checked ~ #content-2,
+  #tab-btn-3:checked ~ #content-3 {
+    display: block;
+  }
+
+  // .tabs > label:first-of-type {
+  //   margin-left: 0;
+  // }
+}

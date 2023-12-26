@@ -1,0 +1,17 @@
+.characteristic {
+  &__buttom {
+    display: none;
+
+    @include for-tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include for-desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

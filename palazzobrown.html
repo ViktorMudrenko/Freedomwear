@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F R E E D O M</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <button class="header__burger-menu js-open-menu">
+          <svg class="header__icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <a class="logo" href="./index.html"><span class="logo--accent">FREE</span>DOM</a>
+        <div class="mobile-menu js-menu-container">
+          <button class="mobile-menu__close-button js-close-menu">
+            <svg class="close-button__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__pages">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--active" href="./index.html"
+                  >Головна</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Каталог</a>
+                <ul class="mobile-menu__catalog">
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./portfolio.html">Весь одяг</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./pants.html">Штани</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./shirt.html">Сорочки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./vest.html">Жилетки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./t-shirt.html">Футболки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./top.html">Топи</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./accessories.html">Аксесуари</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-tel" href="tel:+380938552565">
+                +38 (093) 855 25 65
+              </a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-mail" href="mailto:freedomwear.ua@gmail.com">
+                freedomwear.ua@gmail.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.instagram.com/freedomwear.ua/"
+                target="_blank"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.tiktok.com/@freedomwearua"
+                target="_blank"
+                >TikTok
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.facebook.com/freedomwear.ua"
+                target="_blank"
+                >Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current" href="./index.html">Головна</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:freedomwear.ua@gmail.com">
+              <svg class="contacts__icon contacts__icon--mail">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              freedomwear.ua@gmail.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380938552565">
+              <svg class="contacts__icon contacts__icon--phone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 (093) 855 25 65
+            </a>
+          </li>
+        </ul>
+        <div><a class="bascet contacts__link" href="#"> </a></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="size-menu js-size-menu-container">
+        <div class="size-menu__window">
+          <div class="size-menu__container">
+            <p class="size-menu__text">Заміри виробу вказані у см</p>
+            <table class="size-menu__table">
+              <tr>
+                <th class="size-menu__table-hero">Розмір</th>
+                <th class="size-menu__table-hero">Талія</th>
+                <th class="size-menu__table-hero">Бедра</th>
+                <th class="size-menu__table-hero">Висота посадки</th>
+                <th class="size-menu__table-hero">Довжина*</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">sx</th>
+                <th class="size-menu__table-length">62-66</th>
+                <th class="size-menu__table-length">88-92</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">s</th>
+                <th class="size-menu__table-length">66-70</th>
+                <th class="size-menu__table-length">92-96</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">m</th>
+                <th class="size-menu__table-length">70-74</th>
+                <th class="size-menu__table-length">96-100</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">l</th>
+                <th class="size-menu__table-length">74-78</th>
+                <th class="size-menu__table-length">100-104</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">xl</th>
+                <th class="size-menu__table-length">78-82</th>
+                <th class="size-menu__table-length">104-108</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">2xl</th>
+                <th class="size-menu__table-length">82-86</th>
+                <th class="size-menu__table-length">108-112</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">3xl</th>
+                <th class="size-menu__table-length">86-90</th>
+                <th class="size-menu__table-length">112-116</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">4xl</th>
+                <th class="size-menu__table-length">90-94</th>
+                <th class="size-menu__table-length">116-120</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+              <tr>
+                <th class="size-menu__table-name">5xl</th>
+                <th class="size-menu__table-length">94-98</th>
+                <th class="size-menu__table-length">120-124</th>
+                <th class="size-menu__table-length">39</th>
+                <th class="size-menu__table-length">110</th>
+              </tr>
+            </table>
+            <p class="size-menu__text">* - корегуємо довжину під ваш зріст</p>
+            <p class="size-menu__text">Таблиця замірів допоможе підібрати Вам ідеальний розмір</p>
+            <button class="size-menu__close-button js-close-size-menu">
+              <svg class="close-button__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="section">
+        <ul class="filter">
+          <li class="filter__item">
+            <a class="filter__button" href="./portfolio.html">Весь одяг</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./pants.html">Штани</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./shirt.html">Сорочки</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./vest.html">Жилетки</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./t-shirt.html">Футболки</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./top.html">Топи</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__button" href="./accessories.html">Аксесуари</a>
+          </li>
+        </ul>
+        <div class="product container">
+          <div class="product__foto">
+            <img class="product__img" src="./images/palazzobrown5.jpg" alt="palazzobrown2" />
+            <img class="product__img" src="./images/palazzobrown6.jpg" alt="palazzobrown3" />
+            <img class="product__img" src="./images/palazzobrown7.jpg" alt="palazzobrown4" />
+            <img class="product__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
+            <img class="product__img" src="./images/palazzobrown2.jpg" alt="palazzobrown2" />
+            <img class="product__img" src="./images/palazzobrown3.jpg" alt="palazzobrown3" />
+            <img class="product__img" src="./images/palazzobrown4.jpg" alt="palazzobrown4" />
+          </div>
+          <div class="product__foto-slider">
+            <div class="slider single-item">
+              <div>
+                <img class="product__img" src="./images/palazzobrown5.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown6.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown7.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown2.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown3.jpg" alt="palazzobrown" />
+              </div>
+              <div>
+                <img class="product__img" src="./images/palazzobrown4.jpg" alt="palazzobrown" />
+              </div>
+            </div>
+          </div>
+          <div class="product__info">
+            <div class="product__card">
+              <h2 class="product__name">Палаццо бежеві</h2>
+              <div class="product__price">
+                <span class="product__price-number"> <p class="product__price">1 399</p></span> ₴
+              </div>
+
+              <ul class="product__color-list">
+                <li class="product__color product__color-palazzogray">
+                  <a class="product__link" href="./palazzogray.html"></a>
+                </li>
+                <li class="product__color product__color-palazzobrown">
+                  <a class="product__link" href="./palazzobrown.html"></a>
+                </li>
+                <li class="product__color product__color-palazzoblack">
+                  <a class="product__link" href="./palazzoblack.html"></a>
+                </li>
+              </ul>
+              <div class="product__size-list product__size">
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1399"
+                  data-sb-curent-size="XS"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-XS"
+                >
+                  <button class="product__size-item">XS</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1399"
+                  data-sb-curent-size="S"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-S"
+                >
+                  <button class="product__size-item">S</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1399"
+                  data-sb-curent-size="M"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-M"
+                >
+                  <button class="product__size-item">M</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1399"
+                  data-sb-curent-size="L"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-L"
+                >
+                  <button class="product__size-item">L</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1399"
+                  data-sb-curent-size="XL"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-XL"
+                >
+                  <button class="product__size-item">XL</button>
+                </div>
+              </div>
+              <div class="product__size-biglist product__size">
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1499"
+                  data-sb-curent-size="2XL"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-2XL"
+                >
+                  <button class="product__size-item">2XL</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1499"
+                  data-sb-curent-size="3XL"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-3XL"
+                >
+                  <button class="product__size-item">3XL</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1499"
+                  data-sb-curent-size="4XL"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-4XL"
+                >
+                  <button class="product__size-item">4XL</button>
+                </div>
+                <div
+                  class="product__size-element"
+                  data-sb-curent-price="1499"
+                  data-sb-curent-size="5XL"
+                  data-sb-curent-id-or-vendor-code="palazzobrown-5XL"
+                >
+                  <button class="product__size-item">5XL</button>
+                </div>
+              </div>
+              <div class="size-section">
+                <p class="size-menu__siza">Розміри</p>
+                <button class="size-menu__button js-open-size-menu">Таблиця розмірів</button>
+              </div>
+              <div class="product__quantity"></div>
+              <button
+                class="product__button"
+                data-sb-id-or-vendor-code="palazzobrown"
+                data-sb-product-name="Палаццо бежеві"
+                data-sb-product-price="1399"
+                data-sb-product-quantity="1"
+                data-sb-product-img="./images/palazzobrown.jpg"
+                type="submit"
+              >
+                Додати у кошик
+              </button>
+            </div>
+            <div class="product__details">
+              <div class="tabs">
+                <div>
+                  <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-1" value="" />
+                  <label class="tabs__label" for="tab-btn-1">Опис</label>
+                  <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-2" value="" />
+                  <label class="tabs__label" for="tab-btn-2">Склад</label>
+                  <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-3" value="" />
+                  <label class="tabs__label" for="tab-btn-3">Догляд</label>
+
+                  <div class="tabs__content" id="content-1">
+                    <p class="tabs__content-text">
+                      Штани Palazzo - це елегантний і комфортний вибір для будь-якої жінки. Їх
+                      стильний дизайн і висока якість матеріалів забезпечують бездоганний зовнішній
+                      вигляд і приємне відчуття під час носіння.
+                    </p>
+                    <p class="tabs__content-text">Особливості штанів Palazzo:</p>
+                    <ul class="tabs__content-list">
+                      <li class="tabs__content-item">
+                        Штани мають широкий прямий крій, який легко вписується в будь-який стиль і
+                        виглядає дуже стильно. Вони підкреслюють лінії фігури, але при цьому не
+                        обмежують рухи.
+                      </li>
+                      <li class="tabs__content-item">
+                        Еластичний пояс на талії забезпечує ідеальну посадку і додає зручність при
+                        одяганні і зніманні. Штани не стягують живіт, що робить їх ідеальним
+                        варіантом для повсякденного використання або офісного гардеробу.
+                      </li>
+                      <li class="tabs__content-item">
+                        Штани Palazzo чудово пасують як з витонченою блузою і туфлями на підборах
+                        для стильного вечірнього образу, так і зі зручним топом і кедами для
+                        повсякденних прогулянок.
+                      </li>
+                      <li class="tabs__content-item">
+                        В нашому інтернет-магазині представлений широкий вибір кольорів штанів
+                        Palazzo, що дозволяє знайти ідеальний варіант під ваш стиль і вподобання.
+                      </li>
+                      <li class="tabs__content-item">
+                        Штани Palazzo виглядають чудово на будь-якій фігурі, допомагаючи створити
+                        гармонійний образ і зробити акцент на вашому стилі.
+                      </li>
+                    </ul>
+                    <p class="tabs__content-text">
+                      Нехай ваш гардероб поповниться штанами Palazzo, які стануть улюбленим
+                      елементом вашого образу і дозволять вам почуватися затишно і чарівно в
+                      будь-яку пору року! Придбати цей стильний варіант ви можете у нашому
+                      інтернет-магазині за привабливою ціною та зі знижкою на перше замовлення.
+                      Замовляйте прямо зараз і отримуйте задоволення від носіння цих чудових штанів
+                      Palazzo.
+                    </p>
+                  </div>
+                  <div class="tabs__content" id="content-2">
+                    <p class="tabs__content-text">Склад тканини штанів Palazzo:</p>
+                    <ul class="tabs__content-list">
+                      <li class="tabs__content-item">
+                        60% поліестр: Поліестер є штучним волокном, яке використовується в
+                        текстильній промисловості через його високу міцність та довговічність. Це
+                        забезпечує стійкість матеріалу до розтягання, зминання та істирання.
+                        Поліестер також не вбирає вологу, що дозволяє швидше сохнення тканини.
+                      </li>
+                      <li class="tabs__content-item">
+                        37% віскоза: Віскоза - натуральне волокно, отримане з деревини. Вона додає
+                        штанам приємну м'якість і ніжний блиск. Віскозна тканина також має добру
+                        вологовіддачу, тобто добре вбирає вологу і дозволяє шкірі "дихати", що
+                        робить ці штани комфортними влітку.
+                      </li>
+                      <li class="tabs__content-item">
+                        3% еластан: Еластан, або лайкра, забезпечує штанам еластичність і гнучкість.
+                        Він дозволяє тканині повертатися в початкову форму після розтягування і
+                        забезпечує оптимальну посадку на фігурі, не створюючи відчуття обмеження
+                        рухів.
+                      </li>
+                    </ul>
+                    <p class="tabs__content-text">
+                      Такий склад тканини робить штани Palazzo ідеальним варіантом для створення
+                      елегантних та затишних образів. Вони поєднують в собі переваги як штучного,
+                      так і натурального волокон, надаючи тканині зносостійкість, приємну текстуру
+                      та комфорт під час носіння. Штани Palazzo з таким складом тканини стануть
+                      улюбленим вибором для різних подій - від офісних зустрічей до вечірніх
+                      виходів.
+                    </p>
+                  </div>
+                  <div class="tabs__content" id="content-3">
+                    <p class="tabs__content-text">Умови догляду за штанами Palazzo:</p>
+                    <ul class="tabs__content-list">
+                      <li class="tabs__content-item">
+                        Рекомендуємо прати штани Palazzo в холодній або теплій воді на деликатному
+                        режимі прання. Використовуйте нейтральні або спеціальні засоби для догляду
+                        за декоративними та дорогоцінними тканинами.
+                      </li>
+                      <li class="tabs__content-item">
+                        Не використовуйте хлор змочувачі або інші агресивні відбілювачі, оскільки це
+                        може пошкодити тканину і знизити якість кольору.
+                      </li>
+                      <li class="tabs__content-item">
+                        Рекомендовано висушувати штани Palazzo, розкладеними в горизонтальному
+                        положенні на рівній поверхні. Уникайте сушки на прямому сонячному світлі або
+                        на радіаторі, оскільки це може призвести до втрати форми та зміни кольору.
+                      </li>
+                      <li class="tabs__content-item">
+                        Для збереження стильного вигляду штанів рекомендуємо прасувати їх на
+                        середній температурі. Найкраще використовувати паровий праску або праску з
+                        режимом пару, щоб уникнути зминання тканини.
+                      </li>
+                      <li class="tabs__content-item">
+                        Якщо у вас немає можливості прати штани Palazzo вдома, рекомендуємо
+                        звернутися до професійних хімчисток, які спеціалізуються на догляді за
+                        декоративними та дорогоцінними тканинами.
+                      </li>
+                    </ul>
+                    <p class="tabs__content-text">
+                      Дотримуючись цих рекомендацій, ви збережете якість та стильний вигляд штанів
+                      Palazzo протягом тривалого часу і будете насолоджуватися їх комфортом та
+                      елегантним дизайном.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="size-menu js-description-container">
+                  <div class="size-menu__window">
+                    <div class="size-menu__container">
+                      <p class="tabs__content-text">
+                        Штани Palazzo - це елегантний і комфортний вибір для будь-якої жінки. Їх
+                        стильний дизайн і висока якість матеріалів забезпечують бездоганний
+                        зовнішній вигляд і приємне відчуття під час носіння.
+                      </p>
+                      <p class="tabs__content-text">Особливості штанів Palazzo:</p>
+                      <ul class="tabs__content-list">
+                        <li class="tabs__content-item">
+                          Штани мають широкий прямий крій, який легко вписується в будь-який стиль і
+                          виглядає дуже стильно. Вони підкреслюють лінії фігури, але при цьому не
+                          обмежують рухи.
+                        </li>
+                        <li class="tabs__content-item">
+                          Еластичний пояс на талії забезпечує ідеальну посадку і додає зручність при
+                          одяганні і зніманні. Штани не стягують живіт, що робить їх ідеальним
+                          варіантом для повсякденного використання або офісного гардеробу.
+                        </li>
+                        <li class="tabs__content-item">
+                          Штани Palazzo чудово пасують як з витонченою блузою і туфлями на підборах
+                          для стильного вечірнього образу, так і зі зручним топом і кедами для
+                          повсякденних прогулянок.
+                        </li>
+                        <li class="tabs__content-item">
+                          В нашому інтернет-магазині представлений широкий вибір кольорів штанів
+                          Palazzo, що дозволяє знайти ідеальний варіант під ваш стиль і вподобання.
+                        </li>
+                        <li class="tabs__content-item">
+                          Штани Palazzo виглядають чудово на будь-якій фігурі, допомагаючи створити
+                          гармонійний образ і зробити акцент на вашому стилі.
+                        </li>
+                      </ul>
+                      <p class="tabs__content-text">
+                        Нехай ваш гардероб поповниться штанами Palazzo, які стануть улюбленим
+                        елементом вашого образу і дозволять вам почуватися затишно і чарівно в
+                        будь-яку пору року! Придбати цей стильний варіант ви можете у нашому
+                        інтернет-магазині за привабливою ціною та зі знижкою на перше замовлення.
+                        Замовляйте прямо зараз і отримуйте задоволення від носіння цих чудових
+                        штанів Palazzo.
+                      </p>
+                      <button class="size-menu__close-button js-close-description">
+                        <svg class="close-button__icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="size-menu js-storage-container">
+                  <div class="size-menu__window">
+                    <div class="size-menu__container">
+                      <p class="tabs__content-text">Склад тканини штанів Palazzo:</p>
+                      <ul class="tabs__content-list">
+                        <li class="tabs__content-item">
+                          60% поліестр: Поліестер є штучним волокном, яке використовується в
+                          текстильній промисловості через його високу міцність та довговічність. Це
+                          забезпечує стійкість матеріалу до розтягання, зминання та істирання.
+                          Поліестер також не вбирає вологу, що дозволяє швидше сохнення тканини.
+                        </li>
+                        <li class="tabs__content-item">
+                          37% віскоза: Віскоза - натуральне волокно, отримане з деревини. Вона додає
+                          штанам приємну м'якість і ніжний блиск. Віскозна тканина також має добру
+                          вологовіддачу, тобто добре вбирає вологу і дозволяє шкірі "дихати", що
+                          робить ці штани комфортними влітку.
+                        </li>
+                        <li class="tabs__content-item">
+                          3% еластан: Еластан, або лайкра, забезпечує штанам еластичність і
+                          гнучкість. Він дозволяє тканині повертатися в початкову форму після
+                          розтягування і забезпечує оптимальну посадку на фігурі, не створюючи
+                          відчуття обмеження рухів.
+                        </li>
+                      </ul>
+                      <p class="tabs__content-text">
+                        Такий склад тканини робить штани Palazzo ідеальним варіантом для створення
+                        елегантних та затишних образів. Вони поєднують в собі переваги як штучного,
+                        так і натурального волокон, надаючи тканині зносостійкість, приємну текстуру
+                        та комфорт під час носіння. Штани Palazzo з таким складом тканини стануть
+                        улюбленим вибором для різних подій - від офісних зустрічей до вечірніх
+                        виходів.
+                      </p>
+                      <button class="size-menu__close-button js-close-storage">
+                        <svg class="close-button__icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="size-menu js-care-container">
+                  <div class="size-menu__window">
+                    <div class="size-menu__container">
+                      <p class="tabs__content-text">Умови догляду за штанами Palazzo:</p>
+                      <ul class="tabs__content-list">
+                        <li class="tabs__content-item">
+                          Рекомендуємо прати штани Palazzo в холодній або теплій воді на деликатному
+                          режимі прання. Використовуйте нейтральні або спеціальні засоби для догляду
+                          за декоративними та дорогоцінними тканинами.
+                        </li>
+                        <li class="tabs__content-item">
+                          Не використовуйте хлор змочувачі або інші агресивні відбілювачі, оскільки
+                          це може пошкодити тканину і знизити якість кольору.
+                        </li>
+                        <li class="tabs__content-item">
+                          Рекомендовано висушувати штани Palazzo, розкладеними в горизонтальному
+                          положенні на рівній поверхні. Уникайте сушки на прямому сонячному світлі
+                          або на радіаторі, оскільки це може призвести до втрати форми та зміни
+                          кольору.
+                        </li>
+                        <li class="tabs__content-item">
+                          Для збереження стильного вигляду штанів рекомендуємо прасувати їх на
+                          середній температурі. Найкраще використовувати паровий праску або праску з
+                          режимом пару, щоб уникнути зминання тканини.
+                        </li>
+                        <li class="tabs__content-item">
+                          Якщо у вас немає можливості прати штани Palazzo вдома, рекомендуємо
+                          звернутися до професійних хімчисток, які спеціалізуються на догляді за
+                          декоративними та дорогоцінними тканинами.
+                        </li>
+                      </ul>
+                      <p class="tabs__content-text">
+                        Дотримуючись цих рекомендацій, ви збережете якість та стильний вигляд штанів
+                        Palazzo протягом тривалого часу і будете насолоджуватися їх комфортом та
+                        елегантним дизайном.
+                      </p>
+                      <button class="size-menu__close-button js-close-care">
+                        <svg class="close-button__icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="characteristic__buttom">
+                  <button class="size-menu__button js-open-description">Опис</button>
+                  <button class="size-menu__button js-open-storage">Склад</button>
+                  <button class="size-menu__button js-open-care">Догляд</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="product__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
+          <img class="product__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
+          <img class="product__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__connection">
+          <a class="logo logo--footer" href="./index.html">
+            <span class="logo--accent">FREE</span>DOM
+          </a>
+          <div class="social">
+            <p class="social__text">приєднуйтесь</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.instagram.com/freedomwear.ua/"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.tiktok.com/@freedomwearua"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-tiktok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.facebook.com/freedomwear.ua"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/ugNVqVzA1ZjysugSA"
+                  target="_blank"
+                  >м. Київ</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="mailto:freedomwear.ua@gmail.com"
+                  >freedomwear.ua@gmail.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="tel:+380938552565">+38 (093) 855 25 65</a>
+              </li>
+            </ul>
+          </address>
+          <a class="privacy__link" href="./privacy.html">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/size-menu.js"></script>
+    <script src="./js/care.js"></script>
+    <script src="./js/description.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+    <div class="smart-basket__wrapper"></div>
+
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+
+    <script>
+      $(function () {
+        $('.smart-basket__wrapper').smbasket({
+          productElement: 'product',
+          buttonAddToBasket: 'product__button',
+          productPrice: 'product__price-number',
+          productSize: 'product__size-element',
+
+          productQuantityWrapper: 'product__quantity',
+          smartBasketMinArea: 'bascet',
+          countryCode: '+38',
+          smartBasketCurrency: '₴',
+          smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+          agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: 'https://artstranger.ru/privacy.html',
+          },
+          nameIsRequired: false,
+        });
+      });
+    </script>
+  </body>
+</html>

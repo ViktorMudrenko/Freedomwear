@@ -1,0 +1,136 @@
+.size-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-menu {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 40px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.289);
+  transform: translateY(150%);
+  transition: transform var(--time-trasform);
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  &__window {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    padding: 65px 20px 20px 20px;
+    height: 100vh;
+    background-color: white;
+
+    @include for-tablet {
+      width: 35%;
+    }
+
+    @include for-desktop {
+      width: 35%;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__close-button {
+    position: fixed;
+    display: flex;
+    border: none;
+    padding: 0;
+    top: 76px;
+    right: 20px;
+    cursor: pointer;
+    background-color: var(--color-text-light);
+    transition: color var(--time-trasform) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+  &__text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__table {
+    min-width: 320px;
+  }
+
+  &__table-hero {
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+
+    &:not(:first-child) {
+      width: 70px;
+
+      @include for-tablet {
+        min-width: 100px;
+      }
+
+      @include for-desktop {
+        min-width: 100px;
+      }
+    }
+  }
+
+  &__table-name {
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  &__table-name-oversize {
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+    padding-right: 10px;
+
+    @include for-tablet {
+      padding-right: 50px;
+    }
+
+    @include for-desktop {
+      padding-right: 50px;
+    }
+  }
+
+  &__table-length {
+    border-left: 1px black solid;
+  }
+
+  &__table {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    border-spacing: 0;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    cursor: pointer;
+    background-color: opacify($color: #ffffff, $amount: 0);
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}

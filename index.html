@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F R E E D O M</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  </head>
+  <body>
+    <header class="header header__hero">
+      <div class="container header__container">
+        <button class="header__burger-menu js-open-menu">
+          <svg class="header__icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <a class="logo" href="./index.html"><span class="logo--accent">FREE</span>DOM</a>
+        <div class="mobile-menu js-menu-container">
+          <button class="mobile-menu__close-button js-close-menu">
+            <svg class="close-button__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__pages">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--active" href="./index.html"
+                  >Головна</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Каталог</a>
+                <ul class="mobile-menu__catalog">
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./portfolio.html">Весь одяг</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./pants.html">Штани</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./shirt.html">Сорочки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./vest.html">Жилетки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./t-shirt.html">Футболки</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./top.html">Топи</a>
+                  </li>
+                  <li class="mobile-menu__catalog-item">
+                    <a class="mobile-menu__catalog-link" href="./accessories.html">Аксесуари</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-tel" href="tel:+380938552565">
+                +38 (093) 855 25 65
+              </a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-mail" href="mailto:freedomwear.ua@gmail.com">
+                freedomwear.ua@gmail.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.instagram.com/freedomwear.ua/"
+                target="_blank"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.tiktok.com/@freedomwearua"
+                target="_blank"
+                >TikTok
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.facebook.com/freedomwear.ua"
+                target="_blank"
+                >Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current" href="./index.html">Головна</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./portfolio.html">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav> -->
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:freedomwear.ua@gmail.com">
+              <svg class="contacts__icon contacts__icon--mail">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              freedomwear.ua@gmail.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380938552565">
+              <svg class="contacts__icon contacts__icon--phone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 (093) 855 25 65
+            </a>
+          </li>
+        </ul>
+        <div><a class="bascet contacts__link" href="#"> </a></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img class="hero__img" src="./images/hero.png" alt="palazzo" />
+        <div class="container hero__container">
+          <div class="hero__blok">
+            <h1 class="hero__title"><span class="logo--accent">FREE</span>DOOM</h1>
+            <h2 class="hero__text">Обирай стиль та комфорт</h2>
+            <h2 class="hero__primery-text">Трендові класичні палаццо</h2>
+            <h2 class="hero__text">Це саме ті штани які ти шукаєш</h2>
+            <a class="hero__link" href="./portfolio.html">Оформити замовлення</a>
+          </div>
+        </div>
+      </section>
+      <section class="size">
+        <ul class="size__list">
+          <li class="size__item">Розміри від SX до 6XL</li>
+          <li class="size__item">
+            <video class="size__video" src="./video/size.MOV" controls></video>
+          </li>
+        </ul>
+      </section>
+      <li class="advantages__item">Безкоштовне корегування довжини</li>
+      <li class="advantages__item">Не кошлатяться</li>
+      <li class="advantages__item">Не втрачають форму</li>
+      <li class="advantages__item">Ідеально підходять на осінь та зиму</li>
+      <li class="advantages__item">Відправказа повною олатою або передплатою</li>
+      <li class="advantages__item">Обмін та повернення</li>
+      <li class="advantages__item">Власне виробництво</li>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__connection">
+          <a class="logo logo--footer" href="./index.html">
+            <span class="logo--accent">FREE</span>DOM
+          </a>
+          <div class="social">
+            <p class="social__text">приєднуйтесь</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.instagram.com/freedomwear.ua/"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.tiktok.com/@freedomwearua"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-tiktok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.facebook.com/freedomwear.ua"
+                  target="_blank"
+                >
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/ugNVqVzA1ZjysugSA"
+                  target="_blank"
+                  >м. Київ</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="mailto:freedomwear.ua@gmail.com"
+                  >freedomwear.ua@gmail.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="tel:+380938552565">+38 (093) 855 25 65</a>
+              </li>
+            </ul>
+          </address>
+          <a class="privacy__link" href="./privacy.html">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/size-menu.js"></script>
+    <script src="./js/care.js"></script>
+    <script src="./js/description.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/main2.js"></script>
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css" />
+
+    <div class="smart-basket__wrapper"></div>
+
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+
+    <script>
+      $(function () {
+        $('.smart-basket__wrapper').smbasket({
+          productElement: 'product',
+          buttonAddToBasket: 'product__button',
+          productPrice: 'product__price-number',
+          productSize: 'product__size-element',
+
+          productQuantityWrapper: 'product__quantity',
+          smartBasketMinArea: 'bascet',
+          countryCode: '+38',
+          smartBasketCurrency: '₴',
+          smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+          agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: 'https://artstranger.ru/privacy.html',
+          },
+          nameIsRequired: false,
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.size {
+  margin: 0 auto;
+
+  @include for-tablet {
+  }
+
+  @include for-desktop {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__item {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__video {
+    height: 100%;
+  }
+}
